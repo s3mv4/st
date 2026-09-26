@@ -2125,6 +2125,8 @@ main(int argc, char *argv[])
 	} ARGEND;
 
 run:
+    setenv("COLORTERM", "truecolor", 1);
+
 	if (argc > 0) /* eat all remaining arguments */
 		opt_cmd = argv;
 
